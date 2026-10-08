@@ -1,0 +1,232 @@
+{
+  "n_clusters": 4,
+  "silhouette_score": 0.2425,
+  "inertia": 855.11,
+  "pca_variance_ratio": [
+    0.4199,
+    0.2076
+  ],
+  "pca_total_variance": 0.6275,
+  "features": [
+    "temperature",
+    "rainfall",
+    "humidity",
+    "soil_moisture",
+    "soil_ph",
+    "nitrogen",
+    "phosphorus",
+    "potassium"
+  ],
+  "cluster_profiles": {
+    "0": {
+      "cluster_id": 0,
+      "crop_count": 31,
+      "unique_crops": [
+        "Banana",
+        "Coffee",
+        "Potato",
+        "Sugarcane",
+        "Tomato"
+      ],
+      "group_name": "Wetland / High Moisture Moderate Thermal Conditions Group",
+      "summary": "High Rainfall & High Moisture Wetland, moderate thermal conditions, neutral loam soils, heavy feeder (high nitrogen & potassium).",
+      "conditions": {
+        "group_name": "Wetland / High Moisture Moderate Thermal Conditions Group",
+        "water_condition": "High Rainfall & High Moisture Wetland",
+        "thermal_condition": "Moderate Thermal Conditions",
+        "soil_condition": "Neutral Loam Soils",
+        "nutrient_condition": "Heavy Feeder (High Nitrogen & Potassium)",
+        "summary": "High Rainfall & High Moisture Wetland, moderate thermal conditions, neutral loam soils, heavy feeder (high nitrogen & potassium)."
+      },
+      "means": {
+        "temperature": 25.15,
+        "rainfall": 1352.54,
+        "humidity": 76.73,
+        "soil_moisture": 72.5,
+        "soil_ph": 6.22,
+        "nitrogen": 116.08,
+        "phosphorus": 69.74,
+        "potassium": 111.56
+      },
+      "centroid_scaled": [
+        0.15480848449921927,
+        0.7075493577273997,
+        0.9007211040614191,
+        0.9648962160518437,
+        -0.6067240713670061,
+        1.1930705940048707,
+        1.1070613262032447,
+        1.8555480669506512
+      ]
+    },
+    "1": {
+      "cluster_id": 1,
+      "crop_count": 59,
+      "unique_crops": [
+        "Chickpea",
+        "Cotton",
+        "Groundnut",
+        "Millet (Bajra)",
+        "Pigeon Pea",
+        "Sorghum (Jowar)",
+        "Soybean",
+        "Sunflower"
+      ],
+      "group_name": "Arid / Semi-Arid Warm Tropical Group",
+      "summary": "Low Rainfall & Arid (Drought Tolerant), warm tropical / sub-tropical climate, neutral loam soils, low nitrogen demand (legume / drought hardy).",
+      "conditions": {
+        "group_name": "Arid / Semi-Arid Warm Tropical Group",
+        "water_condition": "Low Rainfall & Arid (Drought Tolerant)",
+        "thermal_condition": "Warm Tropical / Sub-tropical Climate",
+        "soil_condition": "Neutral Loam Soils",
+        "nutrient_condition": "Low Nitrogen Demand (Legume / Drought Hardy)",
+        "summary": "Low Rainfall & Arid (Drought Tolerant), warm tropical / sub-tropical climate, neutral loam soils, low nitrogen demand (legume / drought hardy)."
+      },
+      "means": {
+        "temperature": 27.73,
+        "rainfall": 548.02,
+        "humidity": 47.53,
+        "soil_moisture": 35.31,
+        "soil_ph": 6.84,
+        "nitrogen": 45.78,
+        "phosphorus": 47.15,
+        "potassium": 41.24
+      },
+      "centroid_scaled": [
+        0.6155538428359867,
+        -0.6456246290047755,
+        -1.025748200969498,
+        -1.1438518534825,
+        0.4267423895265116,
+        -1.004004732501706,
+        -0.2973603655499354,
+        -0.6044932502320577
+      ]
+    },
+    "2": {
+      "cluster_id": 2,
+      "crop_count": 43,
+      "unique_crops": [
+        "Coconut",
+        "Coffee",
+        "Jute",
+        "Rice",
+        "Sugarcane"
+      ],
+      "group_name": "Wetland / High Moisture Moderate Thermal Conditions Group",
+      "summary": "High Rainfall & High Moisture Wetland, moderate thermal conditions, neutral loam soils, balanced nutrient consumption.",
+      "conditions": {
+        "group_name": "Wetland / High Moisture Moderate Thermal Conditions Group",
+        "water_condition": "High Rainfall & High Moisture Wetland",
+        "thermal_condition": "Moderate Thermal Conditions",
+        "soil_condition": "Neutral Loam Soils",
+        "nutrient_condition": "Balanced Nutrient Consumption",
+        "summary": "High Rainfall & High Moisture Wetland, moderate thermal conditions, neutral loam soils, balanced nutrient consumption."
+      },
+      "means": {
+        "temperature": 26.62,
+        "rainfall": 1791.42,
+        "humidity": 81.74,
+        "soil_moisture": 76.15,
+        "soil_ph": 6.22,
+        "nitrogen": 77.6,
+        "phosphorus": 39.64,
+        "potassium": 56.01
+      },
+      "centroid_scaled": [
+        0.41755944935265754,
+        1.4457411459141303,
+        1.231343932290555,
+        1.1722582225225606,
+        -0.6066989829102382,
+        -0.009544331669494116,
+        -0.764160801274007,
+        -0.08778008167595949
+      ]
+    },
+    "3": {
+      "cluster_id": 3,
+      "crop_count": 87,
+      "unique_crops": [
+        "Barley",
+        "Cotton",
+        "Garlic",
+        "Groundnut",
+        "Maize",
+        "Mustard",
+        "Onion",
+        "Soybean",
+        "Sunflower",
+        "Tomato",
+        "Wheat"
+      ],
+      "group_name": "Mesic / Moderate Cool Temperate Group",
+      "summary": "Moderate Rainfall & Balanced Moisture, cool temperate / winter (rabi) season, neutral loam soils, balanced nutrient consumption.",
+      "conditions": {
+        "group_name": "Mesic / Moderate Cool Temperate Group",
+        "water_condition": "Moderate Rainfall & Balanced Moisture",
+        "thermal_condition": "Cool Temperate / Winter (Rabi) Season",
+        "soil_condition": "Neutral Loam Soils",
+        "nutrient_condition": "Balanced Nutrient Consumption",
+        "summary": "Moderate Rainfall & Balanced Moisture, cool temperate / winter (rabi) season, neutral loam soils, balanced nutrient consumption."
+      },
+      "means": {
+        "temperature": 20.48,
+        "rainfall": 617.46,
+        "humidity": 59.53,
+        "soil_moisture": 52.88,
+        "soil_ph": 6.72,
+        "nitrogen": 86.24,
+        "phosphorus": 54.91,
+        "potassium": 52.57
+      },
+      "centroid_scaled": [
+        -0.6789861617122198,
+        -0.5288396120985664,
+        -0.23391953399077567,
+        -0.14748996448976567,
+        0.2266517413270483,
+        0.26047697776135464,
+        0.18487672310261877,
+        -0.20784304367485604
+      ]
+    }
+  },
+  "eval_curve": {
+    "k_values": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "inertias": [
+      1211.779866628388,
+      1004.2854793382619,
+      855.1133699562313,
+      755.9988782719789,
+      674.2597279951066,
+      620.7710977325739,
+      567.6413904108149,
+      523.296926222372,
+      500.0510627813845
+    ],
+    "silhouettes": [
+      0.3158,
+      0.2402,
+      0.2425,
+      0.2491,
+      0.2559,
+      0.255,
+      0.2331,
+      0.252,
+      0.2347
+    ],
+    "suggested_k": 2,
+    "best_silhouette": 0.3158
+  }
+}

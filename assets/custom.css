@@ -1,0 +1,607 @@
+/* AgriSense AI - High-Contrast Precision Agricultural Theme */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-app: #F5F7F2;
+    --primary-dark: #123524;
+    --secondary-green: #1F6B45;
+    --secondary-hover: #155C39;
+    --accent-green: #3FA66B;
+    --card-bg: #FFFFFF;
+    --text-primary: #16231B;
+    --text-secondary: #526057;
+    --border-color: #D8E2DA;
+    --white: #FFFFFF;
+    --subtle-tint: #E8F5EC;
+    --warning-bg: #FFFBEB;
+    --warning-border: #FCD34D;
+    --warning-text: #92400E;
+}
+
+/* 1. Global Page Background & Typography */
+html, body, [data-testid="stAppViewContainer"], .main, .stApp {
+    background-color: var(--bg-app) !important;
+    color: var(--text-primary) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.main .block-container {
+    padding-top: 1.8rem !important;
+    padding-bottom: 3.5rem !important;
+    max-width: 1280px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif !important;
+    color: var(--primary-dark) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+}
+
+p, span, div, li {
+    color: var(--text-primary);
+}
+
+/* 2. Hero Section */
+.agri-hero {
+    background: linear-gradient(135deg, #123524 0%, #1F6B45 100%) !important;
+    border-radius: 14px !important;
+    padding: 2.2rem 2.5rem !important;
+    color: var(--white) !important;
+    box-shadow: 0 8px 24px rgba(18, 53, 36, 0.2) !important;
+    margin-bottom: 1.8rem !important;
+    border: 1px solid #1F6B45 !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.agri-hero h1 {
+    color: #FFFFFF !important;
+    font-size: 2.2rem !important;
+    margin: 0 0 0.5rem 0 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+}
+
+.agri-hero p {
+    color: #E8F5EC !important;
+    font-size: 1.05rem !important;
+    margin: 0 !important;
+    line-height: 1.6 !important;
+    max-width: 840px !important;
+}
+
+/* 3. Cards & Dashboard Containers */
+.custom-card {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 14px !important;
+    padding: 1.5rem 1.8rem !important;
+    box-shadow: 0 4px 16px rgba(18, 53, 36, 0.05) !important;
+    margin-bottom: 1.5rem !important;
+    color: var(--text-primary) !important;
+}
+
+.custom-card-title {
+    color: var(--primary-dark) !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.8rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+.custom-card p {
+    color: var(--text-primary) !important;
+    line-height: 1.6 !important;
+}
+
+.custom-card-secondary {
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem !important;
+}
+
+/* 4. KPI & Metric Cards */
+.kpi-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 1rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.kpi-card {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 14px !important;
+    padding: 1.25rem 1.4rem !important;
+    box-shadow: 0 2px 8px rgba(18, 53, 36, 0.04) !important;
+    border-left: 5px solid var(--secondary-green) !important;
+}
+
+.kpi-label {
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: var(--text-secondary) !important;
+}
+
+.kpi-value {
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 1.85rem !important;
+    font-weight: 800 !important;
+    color: var(--primary-dark) !important;
+    margin: 0.25rem 0 !important;
+}
+
+.kpi-desc {
+    font-size: 0.82rem !important;
+    color: var(--text-secondary) !important;
+    line-height: 1.4 !important;
+}
+
+/* Streamlit Native Metrics */
+[data-testid="stMetric"] {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 14px !important;
+    padding: 1rem 1.25rem !important;
+}
+[data-testid="stMetricLabel"] p {
+    color: var(--text-secondary) !important;
+    font-weight: 700 !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase !important;
+}
+[data-testid="stMetricValue"] div {
+    color: var(--primary-dark) !important;
+    font-weight: 800 !important;
+    font-size: 1.85rem !important;
+}
+
+/* 5. Sidebar Navigation & Components */
+[data-testid="stSidebar"] {
+    background-color: var(--primary-dark) !important;
+    border-right: 1px solid var(--secondary-green) !important;
+}
+
+[data-testid="stSidebar"] h1, 
+[data-testid="stSidebar"] h2, 
+[data-testid="stSidebar"] h3, 
+[data-testid="stSidebar"] p, 
+[data-testid="stSidebar"] span {
+    color: var(--white) !important;
+}
+
+[data-testid="stSidebar"] hr {
+    border-color: rgba(216, 226, 218, 0.25) !important;
+}
+
+/* Sidebar Radio Navigation */
+[data-testid="stSidebar"] [data-testid="stRadio"] > label {
+    color: #E8F5EC !important;
+    font-weight: 700 !important;
+    font-size: 0.88rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 0.5rem !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label {
+    color: var(--white) !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    padding: 0.55rem 0.9rem !important;
+    border-radius: 8px !important;
+    margin-bottom: 0.35rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.2s ease !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:hover {
+    background-color: rgba(63, 166, 107, 0.25) !important;
+    border-color: var(--accent-green) !important;
+}
+
+/* Selected Radio Button in Sidebar */
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:has(input:checked),
+[data-testid="stSidebar"] [data-testid="stRadio"] label[data-checked="true"] {
+    background-color: var(--accent-green) !important;
+    color: var(--white) !important;
+    font-weight: 700 !important;
+    border-color: var(--accent-green) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:has(input:checked) p,
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] > label:has(input:checked) span {
+    color: var(--white) !important;
+    font-weight: 700 !important;
+}
+
+/* 6. Form Input Fields (Number, Select, Sliders, Text) */
+.stNumberInput label, 
+.stSelectbox label, 
+.stSlider label, 
+.stTextInput label,
+.stMultiSelect label {
+    color: var(--primary-dark) !important;
+    font-weight: 700 !important;
+    font-size: 0.92rem !important;
+    margin-bottom: 0.3rem !important;
+}
+
+/* BaseWeb Input Containers */
+[data-baseweb="input"],
+[data-baseweb="base-input"],
+.stNumberInput input,
+.stTextInput input,
+[data-baseweb="select"] > div {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+}
+
+/* Text typed inside inputs */
+.stNumberInput input,
+.stTextInput input,
+[data-baseweb="input"] input {
+    color: var(--text-primary) !important;
+    background-color: var(--card-bg) !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+}
+
+[data-baseweb="input"]:focus-within,
+[data-baseweb="select"] > div:focus-within {
+    border-color: var(--secondary-green) !important;
+    box-shadow: 0 0 0 2px rgba(31, 107, 69, 0.2) !important;
+}
+
+/* Number Input Stepper (+ / -) Buttons */
+.stNumberInput button,
+[data-testid="stNumberInputStepUp"],
+[data-testid="stNumberInputStepDown"] {
+    background-color: var(--bg-app) !important;
+    color: var(--primary-dark) !important;
+    border-color: var(--border-color) !important;
+}
+
+.stNumberInput button:hover {
+    background-color: var(--border-color) !important;
+    color: var(--primary-dark) !important;
+}
+
+.stNumberInput button svg {
+    fill: var(--primary-dark) !important;
+}
+
+/* Dropdown popovers & option lists */
+[data-baseweb="popover"],
+[data-baseweb="menu"],
+ul[role="listbox"] {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 6px 20px rgba(18, 53, 36, 0.12) !important;
+}
+
+li[role="option"],
+[data-baseweb="menu"] li {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    font-size: 0.92rem !important;
+    padding: 8px 12px !important;
+}
+
+li[role="option"]:hover,
+li[role="option"][aria-selected="true"],
+[data-baseweb="menu"] li:hover {
+    background-color: var(--subtle-tint) !important;
+    color: var(--primary-dark) !important;
+    font-weight: 700 !important;
+}
+
+/* MultiSelect Selected Tags */
+[data-baseweb="tag"] {
+    background-color: var(--subtle-tint) !important;
+    border: 1px solid var(--accent-green) !important;
+    color: var(--primary-dark) !important;
+    border-radius: 6px !important;
+}
+
+[data-baseweb="tag"] span {
+    color: var(--primary-dark) !important;
+    font-weight: 600 !important;
+}
+
+/* 7. Buttons */
+.stButton > button,
+button[kind="primary"],
+button[kind="secondary"] {
+    background-color: var(--secondary-green) !important;
+    color: var(--white) !important;
+    border: 1px solid var(--secondary-green) !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    padding: 0.6rem 1.4rem !important;
+    box-shadow: 0 2px 6px rgba(31, 107, 69, 0.25) !important;
+    transition: all 0.2s ease !important;
+}
+
+.stButton > button:hover,
+button[kind="primary"]:hover,
+button[kind="secondary"]:hover {
+    background-color: var(--secondary-hover) !important;
+    color: var(--white) !important;
+    border-color: var(--secondary-hover) !important;
+    box-shadow: 0 4px 12px rgba(21, 92, 57, 0.35) !important;
+    transform: translateY(-1px) !important;
+}
+
+.stButton > button:focus,
+.stButton > button:active {
+    background-color: var(--secondary-hover) !important;
+    color: var(--white) !important;
+    box-shadow: 0 0 0 3px rgba(63, 166, 107, 0.35) !important;
+}
+
+.stButton > button p,
+.stButton > button span {
+    color: var(--white) !important;
+    font-weight: 600 !important;
+}
+
+/* Form Submit Button (Analyze Conditions) */
+div[data-testid="stFormSubmitButton"] > button {
+    background-color: var(--secondary-green) !important;
+    color: var(--white) !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    padding: 0.75rem 2rem !important;
+}
+
+div[data-testid="stFormSubmitButton"] > button:hover {
+    background-color: var(--secondary-hover) !important;
+    color: var(--white) !important;
+}
+
+div[data-testid="stFormSubmitButton"] > button p,
+div[data-testid="stFormSubmitButton"] > button span {
+    color: var(--white) !important;
+}
+
+/* 8. Tabs */
+[data-testid="stTabs"] button[role="tab"] {
+    color: var(--text-secondary) !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    border-bottom: 2px solid transparent !important;
+    background-color: transparent !important;
+    padding: 0.65rem 1.3rem !important;
+}
+
+[data-testid="stTabs"] button[role="tab"]:hover {
+    color: var(--secondary-green) !important;
+}
+
+[data-testid="stTabs"] button[role="tab"][aria-selected="true"] {
+    color: var(--secondary-green) !important;
+    border-bottom: 3px solid var(--accent-green) !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stTabs"] button[role="tab"] p {
+    color: inherit !important;
+}
+
+/* 9. Dataframe & Tables */
+[data-testid="stDataFrame"], [data-testid="stTable"] {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    background-color: var(--card-bg) !important;
+}
+
+[data-testid="stDataFrame"] div[role="columnheader"] {
+    background-color: var(--primary-dark) !important;
+    color: var(--white) !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+}
+
+[data-testid="stDataFrame"] div[role="gridcell"] {
+    color: var(--text-primary) !important;
+    background-color: var(--card-bg) !important;
+    font-size: 0.88rem !important;
+}
+
+[data-testid="stDataFrame"] div[role="row"]:nth-child(even) div[role="gridcell"] {
+    background-color: var(--bg-app) !important;
+}
+
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1rem 0 !important;
+}
+
+th {
+    background-color: var(--primary-dark) !important;
+    color: var(--white) !important;
+    font-weight: 700 !important;
+    padding: 10px 14px !important;
+    border: 1px solid var(--secondary-green) !important;
+    text-align: left !important;
+}
+
+td {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    padding: 9px 14px !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+tr:nth-child(even) td {
+    background-color: var(--bg-app) !important;
+}
+
+/* 10. Expanders */
+[data-testid="stExpander"] {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 10px !important;
+    margin-bottom: 0.8rem !important;
+    box-shadow: 0 1px 4px rgba(18, 53, 36, 0.03) !important;
+}
+
+[data-testid="stExpander"] summary {
+    color: var(--primary-dark) !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    padding: 0.75rem 1rem !important;
+}
+
+[data-testid="stExpander"] summary svg {
+    fill: var(--primary-dark) !important;
+}
+
+[data-testid="stExpander"] [data-testid="stExpanderDetails"] {
+    color: var(--text-primary) !important;
+    background-color: var(--card-bg) !important;
+    border-top: 1px solid var(--border-color) !important;
+    padding: 1rem 1.2rem !important;
+}
+
+[data-testid="stExpander"] p, 
+[data-testid="stExpander"] li,
+[data-testid="stExpander"] span {
+    color: var(--text-primary) !important;
+}
+
+/* 11. Alerts, Callouts & Notes */
+.academic-callout {
+    background-color: var(--subtle-tint) !important;
+    border: 1px solid var(--accent-green) !important;
+    border-left: 5px solid var(--secondary-green) !important;
+    border-radius: 8px !important;
+    padding: 1.1rem 1.3rem !important;
+    margin: 1.2rem 0 !important;
+    font-size: 0.92rem !important;
+    color: var(--text-primary) !important;
+    line-height: 1.6 !important;
+}
+
+.academic-callout strong,
+.academic-callout b {
+    color: var(--primary-dark) !important;
+}
+
+.viva-tip {
+    background-color: var(--warning-bg) !important;
+    border: 1px solid var(--warning-border) !important;
+    border-left: 5px solid #D97706 !important;
+    border-radius: 8px !important;
+    padding: 1rem 1.2rem !important;
+    margin: 1rem 0 !important;
+    font-size: 0.9rem !important;
+    color: var(--text-primary) !important;
+    line-height: 1.5 !important;
+}
+
+.viva-tip strong,
+.viva-tip b {
+    color: var(--warning-text) !important;
+}
+
+[data-testid="stAlert"] {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+}
+
+[data-testid="stAlert"] p {
+    color: var(--text-primary) !important;
+    font-size: 0.9rem !important;
+}
+
+/* 12. Recommendation & Cluster Cards */
+.rec-card {
+    background-color: var(--card-bg) !important;
+    border-radius: 14px !important;
+    border: 1px solid var(--border-color) !important;
+    padding: 1.4rem !important;
+    margin-bottom: 1rem !important;
+    box-shadow: 0 4px 12px rgba(18, 53, 36, 0.05) !important;
+    transition: all 0.2s ease !important;
+}
+
+.rec-card:hover {
+    border-color: var(--accent-green) !important;
+    box-shadow: 0 8px 20px rgba(31, 107, 69, 0.12) !important;
+}
+
+.rec-crop-name {
+    color: var(--primary-dark) !important;
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+    margin: 0.3rem 0 !important;
+}
+
+.rec-score-value {
+    font-size: 1.9rem !important;
+    font-weight: 800 !important;
+    color: var(--secondary-green) !important;
+}
+
+.rec-badge {
+    display: inline-block !important;
+    padding: 0.25rem 0.65rem !important;
+    border-radius: 20px !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.04em !important;
+    color: var(--white) !important;
+}
+
+/* Pipeline Step Indicator */
+.pipeline-step {
+    background-color: var(--bg-app) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 10px !important;
+    padding: 1rem !important;
+    text-align: center !important;
+}
+
+.pipeline-step-num {
+    background-color: var(--primary-dark) !important;
+    color: var(--white) !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 700 !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 0.4rem !important;
+}
+
+/* 13. Footer */
+.agri-footer {
+    border-top: 1px solid var(--border-color) !important;
+    padding: 1.2rem 0 !important;
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.agri-footer b {
+    color: var(--primary-dark) !important;
+}
