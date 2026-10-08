@@ -172,7 +172,7 @@ d:/AGRICULTURAL CROP CONDITION ANALYSIS/
 #### Setup Steps:
 ```bash
 # 1. Clone repository
-git clone https://github.com/<your-username>/agrisense-ai.git
+git clone https://github.com/mahii7-web/agrisense-ai.git
 cd agrisense-ai
 
 # 2. Install dependencies
@@ -197,7 +197,7 @@ Open your browser at: **`http://localhost:8501`**
 1. **Push to GitHub:** Ensure your code is pushed to a public GitHub repository named `agrisense-ai`.
 2. **Log in to Streamlit Cloud:** Visit [share.streamlit.io](https://share.streamlit.io/) and connect your GitHub account.
 3. **Create New App:**
-   - **Repository:** `<your-username>/agrisense-ai`
+   - **Repository:** `mahii7-web/agrisense-ai`
    - **Branch:** `main`
    - **Main file path:** `app.py`
    - **App URL:** (Choose an available custom subdomain, e.g., `agrisense-ai.streamlit.app`)
